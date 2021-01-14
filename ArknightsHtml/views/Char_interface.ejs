@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/Char_interface.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JS/Char_interface.js"></script>
+    <script src="JS/Chart.min.js"></script>
+</head>
+
+
+<body>
+
+
+    <div class="container  pt-5 title"><img id="titleimg" src="Image/title.png">
+    <a href="./Operator"><div class="pt-4 pb-4"><img id="goBackimg"  src="Image/backbutton.png" alt="backbutton.png"></a></div>
+    <div class="container pt-5 ">
+        <div class="all-wrap pl-3">
+            <p id="chartext"><b>幹員信息</b></p>
+            <img class="bgimg" src="Image/charbg.png" width="95%">
+
+            <div class="char-btn">
+                <img class="char-btn-img" src="Image/character/promotion/<%=imgData.ImageName%>">
+                <img class="char-btn-img" src="Image/character/promotion2/<%=imgData.ImageName%>" style="display: none;">
+                <img class="char-btn-img" src="Image/character/skin/<%=imgData.ImageName%>" style="display: none;">
+                <img class="char-btn-img" src="Image/character/skin2/<%=imgData.ImageName%>" style="display: none;">
+            </div>
+
+            <div class="name-btn ">
+                <img class="name-btn-img" src="Image/r<%=imgData.star%>.png">
+                <p class="name-btn-ENtext"><%=charData.character_Ename%></p>
+                <p class="name-btn-text"><%=charData.character_name%></p>
+            </div>
+
+            <div class="stage0-btn-wrapper">
+                <p class="stage-text">精英一</p>
+                <img class="stage-img" src="Image/elite1.png">
+            </div>
+            <%if(imgData.promotion2==="TRUE"){%>
+            <div class="stage1-btn-wrapper">
+                <p class="stage-text">精英二</p>
+                <img class="stage-img" src="Image/elite2.png">
+            </div>
+            <%}%>
+
+            <%if(imgData.skin1==="TRUE"){%>
+            <div class="stage2-btn-wrapper">
+                <p class="stage-text">時裝1</p>
+                <img class="stage-img" src="Image/images0.png">
+            </div>
+            <%}%>
+
+            <%if(imgData.skin2==="TRUE"){%>
+                <div class="stage3-btn-wrapper">
+                    <p class="stage-text">時裝2</p>
+                    <img class="stage-img" src="Image/images0.png">
+                </div>
+            <%}%>
+            <div class="feature-bg">
+                <h5 style="margin: 1% 2.5% 0% 2.5%; color: rgb(192, 192, 192);">特性</h5>
+                <p style="margin: 0% 2.5% ; color: #fff;"><%=charData.function%></p>
+            </div>
+            <div class="oclass-btn">
+                <div class="oclass-btn-img"><img src="image/<%=imgData.OClass%>.png" width="35%"></div>
+                <div class="oclass-btn-text1">
+                    <p style="text-align:center; margin:2% 0%;color: #fff;">
+                        <%=charData.position%></p>
+                </div>
+                <div class="oclass-btn-text2">
+                    <p style="text-align:center; line-height: 1.2; margin:13% 0%;color: #fff;"><%-charData.tag%></p>
+                </div>
+            </div>
+
+        </div>
+        <!--下半-->
+        <div class="container pl-5 giftb">
+            <br>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#BM">
+                        <p class="navtext"> 基本信息</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#cap">
+                        <p class="navtext">屬性成長</p>
+                    </a>
+                </li>
+                <%if(imgData.star>=2){%>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#skill">
+                        <p class="navtext">技能</p>
+                    </a>
+                </li>
+                <%}%>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#talent">
+                        <p class="navtext">天賦</p>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="BM" class="container tab-pane active"><br>
+                    <img class="gifimg" src="Image/character/gif/<%=imgData.gif%>">
+                    <p style="margin: 0%">基本屬性</p>
+                    <div class="row">
+                        <table style="width:15%; margin:0% 1.5%;">
+                            <tr>
+                                <th style="text-align: center; padding:0px 5px;">阻擋數</th>
+                                <td><%=charData.block%></td>
+                            </tr>
+                            <tr>
+                                <th style="text-align: center; padding:0px 5px;">初始費用</th>
+                                <td><%=charData.cost%></td>
+                            </tr>
+                        </table>
+                        <table style="width:15%">
+                            <tr>
+                                <th style="text-align: center;">攻擊速度</th>
+                                <td><%=charData.atk_time%></td>
+                            </tr>
+                            <tr>
+                                <th style="text-align: center;">再部屬時間</th>
+                                <td><%=charData.set_time%></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table style="width:80%; margin:2% 0%;">
+                        <tr>
+                            <th style="text-align: center;">屬性</th>
+                            <th style="text-align: center;">初始</th>
+                            <th style="text-align: center;">初始MAX</th>
+                            <th style="text-align: center;">精一MAX</th>
+                            <th style="text-align: center;">精二MAX</th>
+                        </tr>
+                        <tr>
+                            <td>生命</td>
+                            <%for(let i = 0 ; i < charData.basic.length ; i++){%>
+                            <td><%=charData.basic[i].hp%></td>
+                            <%}%>
+                        </tr>
+                        <tr>
+                            <td>攻擊</td>
+                            <%for(let i = 0 ; i < charData.basic.length ; i++){%>
+                            <td><%=charData.basic[i].atk%></td>
+                            <%}%>
+                        </tr>
+                        <tr>
+                            <td>防禦</td>
+                            <%for(let i = 0 ; i < charData.basic.length ; i++){%>
+                            <td><%=charData.basic[i].def%></td>
+                            <%}%>
+                        </tr>
+                        <tr>
+                            <td>法抗</td>
+                            <%for(let i = 0 ; i < charData.basic.length ; i++){%>
+                            <td><%=charData.basic[i].mdef%></td>
+                            <%}%>
+                        </tr>
+                    </table>
+
+                    <p style="margin: 0%">攻擊範圍</p>
+                    <table style="width:30%;">
+                        <tr>
+                            <th style="text-align: center;">初始</th>
+                            <th style="text-align: center;">精一</th>
+                            <th style="text-align: center;">精二</th>
+                        </tr>
+                        <tr>
+                            <td class="tbp">
+                                <%-charData.atkposition0%>
+                            </td>
+                            <td class="tbp">
+                                <%-charData.atkposition1%>
+                            </td>
+                            <td class="tbp">
+                                <%-charData.atkposition2%>
+                            </td>
+
+                        </tr>
+                    </table>
+                    <div style="margin: 10%;"></div>
+                </div>
+                <div id="cap" class="container tab-pane fade"><br>
+                    <div style="display: block; width: 70%;">
+                        <canvas width="600" height="400" id="mycanvas"></canvas>
+                    </div>
+                    <img class="gifimg" src="Image/character/gif/<%=imgData.gif%>">
+                </div>
+                <div id="skill" class="container tab-pane fade"><br>
+                    <img class="gifimg" src="Image/character/gif/<%=imgData.gif%>">
+                    <div class="container">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#sk1"><%-charData.skill_name1%></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#sk2"><%-charData.skill_name2%></a>
+                            </li>
+                            <%if(typeof(charData.skill3) != 'undefined'){%>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#sk3"><%-charData.skill_name3%></a>
+                            </li>
+                            <%}%>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div id="sk1" class="container tab-pane active"><br>
+                                <div style="width: 100px; height: 100px; border: 2px solid #808080;">
+                                    <img src="Image/character/skill/<%-charData.skill_Imagename1%>" alt="" width="100%">
+                                </div>
+                                <table style="width:80%;  margin-bottom: 2%;">
+                                    <tr>
+                                        <th style="text-align: center;">等級</th>
+                                        <th style="text-align: center;">描述</th>
+                                        <th style="text-align: center;">消耗</th>
+                                        <th style="text-align: center;">初始</th>
+                                    </tr>
+
+                                    <%for(let i=0; i < charData.skill1.length; i++){%>
+                                    <tr>
+                                        <td class="skLV-td"><%=charData.skill1[i].LV%></td>
+                                        <td><%-charData.skill1[i].text%></td>
+                                        <td><%-charData.skill1[i].start%></td>
+                                        <td><%-charData.skill1[i].cost%></td>
+
+                                    </tr>
+                                    <%}%>
+                            </table>
+                          </div>
+                          <div id="sk2" class="container tab-pane fade"><br>
+                            <div style="width: 100px; height: 100px;border: 2px solid #808080;">
+                                <img src="Image/character/skill/<%-charData.skill_Imagename2%>" alt="" width="100%">
+                                </div>
+                                <table style="width:80%;  margin-bottom: 2%;">
+                                    <tr>
+                                        <th style="text-align: center;">等級</th>
+                                        <th style="text-align: center;">描述</th>
+                                        <th style="text-align: center;">消耗</th>
+                                        <th style="text-align: center;">初始</th>
+                                    </tr>
+                                    <%for(let i=0; i < charData.skill2.length; i++){%>
+                                    <tr>
+                                        <td class="skLV-td"><%=charData.skill2[i].LV%></td>
+                                        <td><%-charData.skill2[i].text%></td>
+                                        <td><%-charData.skill2[i].start%></td>
+                                        <td><%-charData.skill2[i].cost%></td>
+
+                                    </tr>
+                                    <%}%>
+                                </table>
+                          </div>
+                          <%if(typeof(charData.skill3) != 'undefined'){%>
+                          <div id="sk3" class="container tab-pane fade"><br>
+                            <div style="width: 100px; height: 100px;border: 2px solid #808080;">
+                                <img src="Image/character/skill/<%-charData.skill_Imagename3%>" alt="" width="100%">
+                                </div>
+                                <table style="width:80%; margin-bottom: 2%;">
+                                    <tr>
+                                        <th style="text-align: center;">等級</th>
+                                        <th style="text-align: center;">描述</th>
+                                        <th style="text-align: center;">消耗</th>
+                                        <th style="text-align: center;">初始</th>
+                                    </tr>
+                                    <%for(let i=0; i < charData.skill3.length; i++){%>
+                                    <tr>
+                                        <td class="skLV-td"><%=charData.skill3[i].LV%></td>
+                                        <td><%-charData.skill3[i].text%></td>
+                                        <td><%-charData.skill3[i].start%></td>
+                                        <td><%-charData.skill3[i].cost%></td>
+
+                                    </tr>
+                                    <%}%>
+                                </table>
+                          </div>
+                          <%}%>
+                        </div>
+                      </div>
+                </div>
+
+                <div id="talent" class="container tab-pane fade">
+                    <table style="width:100%; margin:2% 0%;">
+                        <tr>
+                            <th style="text-align: center;">天賦一</th>
+                            <th style="text-align: center;">解鎖條件</th>
+                            <th style="text-align: center;">描述</th>
+                        </tr>
+                    <%for(let i=0; i < charData.talent1.length; i++){%>
+                                    <tr>
+                                        <td><%=charData.talent1[i].name%></td>
+                                        <td><%=charData.talent1[i].request%></td>
+                                        <td><%-charData.talent1[i].text%></td>
+                                    </tr>
+                                    <%}%>
+                    </table>
+                    <%if(typeof(charData.talent2) !=  'undefined'){%>
+                    <table style="width:100%; margin:2% 0%;">
+                        <tr>
+                            <th style="text-align: center;">天賦二</th>
+                            <th style="text-align: center;">解鎖條件</th>
+                            <th style="text-align: center;">描述</th>
+                        </tr>
+                        <%for(let i=0; i < charData.talent2.length; i++){%>
+                        <tr>
+                            <td><%=charData.talent2[i].name%></td>
+                            <td><%=charData.talent2[i].request%></td>
+                            <td><%-charData.talent2[i].text%></td>
+                        </tr>
+                        <%}%>
+                    </table>
+                    <%}%>
+                    <div style="margin: 10%;"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</body>
+
+<!--bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    var mycanvas = document.getElementById("mycanvas");
+
+    var marksData = {
+        labels: ["初始", "初始MAX", "精一MAX", "精二MAX"],
+        datasets: [{
+            label: "生命",
+            borderColor: "rgba(251, 94, 94, 0.5)",
+            fill: false,
+            data: 
+            [
+                "<%=charData.basic[0].hp%>",
+                "<%=charData.basic[1].hp%>",
+                "<%=charData.basic[2].hp%>", 
+                "<%=charData.basic[3].hp%>"
+            ]
+        },
+        {
+            label: "攻擊",
+            borderColor: "rgba(243, 120, 169,0.5)",
+            fill: false,
+            data: 
+            [
+                "<%=charData.basic[0].atk%>",
+                "<%=charData.basic[1].atk%>",
+                "<%=charData.basic[2].atk%>", 
+                "<%=charData.basic[3].atk%>"
+            ]
+        },
+        {
+            label: "防禦",
+            borderColor: "rgba(77, 186, 239,0.5)",
+            fill: false,
+            data: 
+            [
+                "<%=charData.basic[0].def%>", "<%=charData.basic[1].def%>",
+                "<%=charData.basic[2].def%>", "<%=charData.basic[3].def%>"]
+        },
+        {
+            label: "法抗",
+            borderColor: "rgba(128, 107, 187,0.5)",
+            fill: false,
+            data: ["<%=charData.basic[0].mdef%>", "<%=charData.basic[1].mdef%>",
+                "<%=charData.basic[2].mdef%>", "<%=charData.basic[3].mdef%>"]
+        }
+        ]
+    };
+    var myLineChart = new Chart(mycanvas, {
+        type: 'line',
+        data: marksData,
+    });
+
+
+</script>
+
+</html>

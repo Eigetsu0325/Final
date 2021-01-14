@@ -1,0 +1,56 @@
+#titleimg{
+  position: absolute;
+  top: 1%;
+  left: 0%;
+  width: 100%;
+  height: auto;
+  z-index: -30;
+}
+
+#goBackimg{
+  position: absolute;
+  top: 5.1%;
+  left: 87.6%;
+  width: 140px;
+}
+
+.title {
+  position: relative;
+}
+
+.result-item {
+  margin: 5px 10px;
+    -webkit-transition: .8s;
+    transition: .8s;
+}
+
+.black{
+  background-image: url(../Image/item/bg1.png);
+  background-size:100px;
+  width: 100px;
+  height: 100px;
+}
+.yellow{
+  background-image: url(../Image/item/bg2.png);
+  background-size:100px;
+  width: 100px;
+  height: 100px;
+}
+.purple{
+  background-image: url(../Image/item/bg3.png);
+  background-size:100px;
+  width: 100px;
+  height: 100px;
+}
+.blue{
+  background-image: url(../Image/item/bg4.png);
+  background-size:100px;
+  width: 100px;
+  height: 100px;
+}
+.green{
+  background-image: url(../Image/item/bg5.png);
+  background-size:100px;
+  width: 100px;
+  height: 100px;
+}

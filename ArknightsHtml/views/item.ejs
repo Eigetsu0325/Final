@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>item</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/item.css">
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container  pt-5 title"><img id="titleimg" src="Image/title.png">
+        <a href="./Home"><div class="pt-4 pb-4"><img id="goBackimg"  src="Image/backbutton.png" alt="backbutton.png"></a></div>
+    <br>
+    <div class="container pt-5 ">
+        素材
+        <div class="row">
+            <% for(var i=0; i<item.upgradematerials.length;i++) { %>
+            <div class="<%=item.upgradematerials[i].bgColor%> result-item">
+                <img src="./Image/item/upgradematerials/<%=item.upgradematerials[i].imgname%>" alt="<%=item.upgradematerials[i].name%>" width="100%"  title="<%=item.upgradematerials[i].name%>">
+            </div>
+            <%}%>
+        </div><br>
+        晶片
+        <div class="row">
+            <% for(var i=0; i<item.chip.length;i++) { %>
+            <div class="<%=item.chip[i].bgColor%> result-item">
+                <img src="./Image/item/chips/<%=item.chip[i].imgname%>" alt="<%=item.chip[i].name%>" width="100%" title="<%=item.chip[i].name%>">
+            </div>
+            <%}%>
+        </div><br>
+        作戰紀錄
+        <div class="row">
+            <% for(var i=0; i<item.BattleRecords.length;i++) { %>
+            <div class="<%=item.BattleRecords[i].bgColor%> result-item">
+                <img src="./Image/item/battlerecords/<%=item.BattleRecords[i].imgname%>" alt="<%=item.BattleRecords[i].name%>" width="100%" title="<%=item.BattleRecords[i].name%>">
+            </div>
+            <%}%>
+        </div>
+    </div>
+</body>
+
+</html>

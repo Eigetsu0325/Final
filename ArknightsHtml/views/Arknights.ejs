@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>阿米驢救救我</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/Arknights.css">
+    
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="JS/Arknights.js"></script>
+</head>
+
+
+<body>
+
+
+
+    <div class="Logotag" >
+    <div class="container pt-5">
+
+        <div class="row">
+
+            <div class="col-sm-4 p-3 my-3">
+
+                <div class="container">
+
+                    <div class="col-sm p-3 my-3">
+                        <img src="Image/123.png" alt="opacity"width="100%">
+                    </div>
+
+                    <div class="col-sm p-2 my-3 text-white">
+                        <a href="./Operator"><img src="Image/character_menu.png" alt="character_menu" width="100%"></a>
+                    </div>
+                    <div class="col-sm p-2 my-3 text-white">
+                        <a href="./item"><img src="Image/item_menu.png" alt="item_menu.png" width="100%"></a>
+                    </div>
+
+                    <div class="col-sm p-2 my-3 text-white">
+                        <a href="./activity.html"><img src="Image/activity_menu.png" alt="activity_menu" width="100%"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-8">
+                <!--<img id="character" class="character" src="Image/character/Astesia.png" alt="Astesia" width="100%">-->
+                <%if(star>3){%>
+                <img id="character" class="character" src="Image/character/promotion2/<%= imgSrc %>" alt="<%= imgSrc %>" width="100%">
+                <%}else {%>
+                    <img id="character" class="character" src="Image/character/promotion/<%= imgSrc %>" alt="<%= imgSrc %>" width="100%">
+                <%}%>
+                <div id="descript" class="content pt-3 p-2 ">
+                   <p ><%-descript%></p>
+                   <audio id="characterAudio" >
+                    <source src="Image/character/Audio/<%=audio%>" type="audio/wav" >
+                    </audio>
+                    <!--
+                    <img src="Image/textbox.png" alt="textbox"width="100%">
+                    <div class="content-text">天球儀的製造技術是個秘密，但就像您所知道的那樣，世間萬物都能用等價的東西來交換。<br>所以，只要您的出價合適，我願意將這秘密轉讓給你。</div>
+                -->
+            </div>
+            
+            </div>
+        </div>
+    </div>
+</div>
+<div class="Logo container-fluid">
+    <img src="Image/Logo.png" width="100%">
+</div>
+</body>
+
+</html>

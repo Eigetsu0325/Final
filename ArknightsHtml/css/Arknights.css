@@ -1,0 +1,40 @@
+body {
+    background: url(../Image/arknight.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+.character{
+    position: relative;
+    cursor: pointer;
+}
+
+.content{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    background-image: url("../Image/textbox.png");
+    background-size: cover;
+    color: #FFF;
+    font-size: 15px;
+}
+
+.Logotag{
+    position: relative;
+}
+
+.Logo{
+    position: absolute;
+    top: 0%;
+}
+
+@media(max-width:768px){
+    .content{
+        top: 74%;
+    left: 10%;
+    }
+}
+

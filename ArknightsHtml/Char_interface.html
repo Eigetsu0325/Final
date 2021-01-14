@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/Char_interface.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JS/Char_interface.js"></script>
+    <script src="JS/Chart.min.js"></script>
+</head>
+
+
+<body>
+    <div class="container  pt-5 title"><img id="titleimg" src="Image/title.png"></div>
+    <div class="container pt-5 ">
+        <div class="all-wrap pl-3">
+            <p id="chartext"><b>幹員信息</b></p>
+            <img class="bgimg" src="Image/charbg.png" width="95%">
+            
+            <div class="char-btn">
+                <img class="char-btn-img" src="Image/character/promotion/cgbird.png">
+                <img class="char-btn-img" src="Image/character/promotion2/cgbird.png" style="display: none;">
+                <img class="char-btn-img" src="Image/character/skin/cgbird.png" style="display: none;">
+            </div>
+            
+            <div class="name-btn ">
+                <img class="name-btn-img" src="Image/r6.png">
+                <p class="name-btn-ENtext">Nightingale</p>
+                <p class="name-btn-text">夜鶯</p>
+            </div>
+
+            <div class="stage0-btn-wrapper">
+                <p class="stage-text">精英一</p>
+                <img class="stage-img" src="Image/elite1.png">
+            </div>
+            <div class="stage1-btn-wrapper">
+                <p class="stage-text">精英二</p>
+                <img class="stage-img" src="Image/elite2.png">
+            </div>
+            <div class="stage2-btn-wrapper">
+                <p class="stage-text">時裝</p>
+                <img class="stage-img" src="Image/images0.png">
+            </div>
+
+            <div class="feature-bg">
+                <h5 style="margin: 2% 2.5% 1% 2.5%; color: rgb(192, 192, 192);">特性</h5>
+                <p style="margin: 0% 2.5% ; color: #fff;">同時回復三個友方單位的生命</p>
+            </div>
+            <div class="oclass-btn">
+                <div class="oclass-btn-img"><img src="image/Medic.png" width="35%"></div>
+                <div class="oclass-btn-text1">
+                    <p style="text-align:center; margin:2% 0%;color: #fff;">
+                        遠程位</p>
+                </div>
+                <div class="oclass-btn-text2">
+                    <p style="text-align:center; margin:13% 0%;color: #fff;">治療 支援</p>
+                </div>
+            </div>
+
+        </div>
+        <!--下半-->
+        <div class="container pl-5 giftb">
+            <br>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#BM">
+                        <p class="navtext"> 基本信息</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#cap">
+                        <p class="navtext">屬性成長</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#skill">
+                        <p class="navtext">技能</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#talent">
+                        <p class="navtext">天賦</p>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="BM" class="container tab-pane active"><br>
+                    <img class="gifimg" src="Image/character/gif/cgbird.gif">
+                    <p style="margin: 0%">基本屬性</p>
+                    <div class="row">
+                        <table style="width:15%; margin:0% 1.5%;">
+                            <tr>
+                                <th style="text-align: center; padding:0px 5px;">阻擋數</th>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <th style="text-align: center; padding:0px 5px;">初始速度</th>
+                                <td>16</td>
+                            </tr>
+                        </table>
+                        <table style="width:15%">
+                            <tr>
+                                <th style="text-align: center;">攻擊速度</th>
+                                <td>慢</td>
+                            </tr>
+                            <tr>
+                                <th style="text-align: center;">再部屬時間</th>
+                                <td>慢</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <table style="width:80%; margin:2% 0%;">
+                        <tr>
+                            <th style="text-align: center;">屬性</th>
+                            <th style="text-align: center;">初始</th>
+                            <th style="text-align: center;">初始MAX</th>
+                            <th style="text-align: center;">精一MAX</th>
+                            <th style="text-align: center;">精二MAX</th>
+                        </tr>
+                        <tr>
+                            <td>生命</td>
+                            <td>796</td>
+                            <td>1076</td>
+                            <td>1346</td>
+                            <td>1705</td>
+                        </tr>
+                        <tr>
+                            <td>攻擊</td>
+                            <td>796</td>
+                            <td>1076</td>
+                            <td>1346</td>
+                            <td>1705</td>
+                        </tr>
+                        <tr>
+                            <td>防禦</td>
+                            <td>796</td>
+                            <td>1076</td>
+                            <td>1346</td>
+                            <td>1705</td>
+                        </tr>
+                        <tr>
+                            <td>法抗</td>
+                            <td>796</td>
+                            <td>1076</td>
+                            <td>1346</td>
+                            <td>1705</td>
+                        </tr>
+                    </table>
+
+                    <p style="margin: 0%">攻擊範圍</p>
+                    <table style="width:30%;">
+                        <tr>
+                            <th style="text-align: center;">初始</th>
+                            <th style="text-align: center;">精一</th>
+                            <th style="text-align: center;">精二</th>
+                        </tr>
+                        <tr>
+                            <td class="tbp">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 52 26" style="vertical-align:top;width:90px;height:60px;width:!important;height:!important"><defs><rect id="1" fill="#27a6f3" width="22" height="22"></rect><rect id="2" fill="none" stroke="gray" stroke-width="2" width="20" height="20"></rect></defs><use xlink:href="#1" x="1" y="1"></use><use xlink:href="#2" x="28" y="2"></use></svg>
+                            </td>
+                            <td class="tbp">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 104 78"
+                                    style="vertical-align:top;width:90px;height:60px;width:important;height:important">
+                                    <defs>
+                                        <rect id="1" fill="#27a6f3" width="22" height="22"></rect>
+                                        <rect id="2" fill="none" stroke="gray" stroke-width="2" width="20" height="20">
+                                        </rect>
+                                    </defs>
+                                    <use xlink:href="#2" x="2" y="2"></use>
+                                    <use xlink:href="#2" x="28" y="2"></use>
+                                    <use xlink:href="#2" x="54" y="2"></use>
+                                    <use xlink:href="#2" x="80" y="2"></use>
+                                    <use xlink:href="#2" x="2" y="28"></use>
+                                    <use xlink:href="#1" x="27" y="27"></use>
+                                    <use xlink:href="#2" x="54" y="28"></use>
+                                    <use xlink:href="#2" x="80" y="28"></use>
+                                    <use xlink:href="#2" x="2" y="54"></use>
+                                    <use xlink:href="#2" x="28" y="54"></use>
+                                    <use xlink:href="#2" x="54" y="54"></use>
+                                    <use xlink:href="#2" x="80" y="54"></use>
+                                </svg>
+                            </td>
+                            <td class="tbp">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    viewBox="0 0 104 78"
+                                    style="vertical-align:top;width:90px;height:60px;width:important;height:important">
+                                    <defs>
+                                        <rect id="1" fill="#27a6f3" width="22" height="22"></rect>
+                                        <rect id="2" fill="none" stroke="gray" stroke-width="2" width="20" height="20">
+                                        </rect>
+                                    </defs>
+                                    <use xlink:href="#2" x="2" y="2"></use>
+                                    <use xlink:href="#2" x="28" y="2"></use>
+                                    <use xlink:href="#2" x="54" y="2"></use>
+                                    <use xlink:href="#2" x="80" y="2"></use>
+                                    <use xlink:href="#2" x="2" y="28"></use>
+                                    <use xlink:href="#1" x="27" y="27"></use>
+                                    <use xlink:href="#2" x="54" y="28"></use>
+                                    <use xlink:href="#2" x="80" y="28"></use>
+                                    <use xlink:href="#2" x="2" y="54"></use>
+                                    <use xlink:href="#2" x="28" y="54"></use>
+                                    <use xlink:href="#2" x="54" y="54"></use>
+                                    <use xlink:href="#2" x="80" y="54"></use>
+                                </svg>
+                            </td>
+
+                        </tr>
+                    </table>
+                    <div style="margin: 10%;"></div>
+                </div>
+                <div id="cap" class="container tab-pane fade"><br>
+                    <div  style="display: block; width: 70%;">
+                        <canvas  width="600" height="400" id="mycanvas"></canvas>
+                    </div>
+                    <img class="gifimg" src="Image/character/gif/cgbird.gif">
+                </div>
+                <div id="skill" class="container tab-pane fade"><br>
+                    <img class="gifimg" src="Image/character/gif/cgbird.gif">
+                    <div class="container">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" role="tablist">
+                          <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#sk1">治療強化·γ型</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#sk2">法術護盾</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#sk3">聖域</a>
+                          </li>
+                        </ul>
+                      
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                          <div id="sk1" class="container tab-pane active"><br>
+                            <div style="width: 100px; height: 100px; border: 2px solid #808080;">
+                            <img src="Image/character/skill/ceylon_skill2.png" alt="" width="100%">
+                            </div>
+                            <table style="width:70%;  margin-bottom: 2%;">
+                                <tr>
+                                    <th style="text-align: center;">等級</th>
+                                    <th style="text-align: center;">描述</th>
+                                    <th style="text-align: center;">消耗</th>
+                                    <th style="text-align: center;">初始</th>
+                                </tr>
+                                <tr>
+                                    <td class="skLV-td">1</td>
+                                    <td>攻擊力+40%</td>
+                                    <td>40</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td class="skLV-td">2</td>
+                                    <td>攻擊力+40%</td>
+                                    <td>40</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td class="skLV-td">3</td>
+                                    <td>攻擊力+40%</td>
+                                    <td>40</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td class="skLV-td">4</td>
+                                    <td>攻擊力+40%</td>
+                                    <td>40</td>
+                                    <td>20</td>
+                                </tr>
+                            </table>
+                          </div>
+                          <div id="sk2" class="container tab-pane fade"><br>
+                            <div style="width: 100px; height: 100px;border: 2px solid #808080;">
+                                <img src="Image/character/skill/ceylon_skill2.png" alt="" width="100%">
+                                </div>
+                                <table style="width:70%;  margin-bottom: 2%;">
+                                    <tr>
+                                        <th style="text-align: center;">等級</th>
+                                        <th style="text-align: center;">描述</th>
+                                        <th style="text-align: center;">消耗</th>
+                                        <th style="text-align: center;">初始</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="skLV-td">1</td>
+                                        <td>攻擊力+40%</td>
+                                        <td>40</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="skLV-td">2</td>
+                                        <td>攻擊力+40%</td>
+                                        <td>40</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="skLV-td">3</td>
+                                        <td>攻擊力+40%</td>
+                                        <td>40</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="skLV-td">4</td>
+                                        <td>攻擊力+40%</td>
+                                        <td>40</td>
+                                        <td>20</td>
+                                    </tr>
+                                </table>
+                          </div>
+                          <div id="sk3" class="container tab-pane fade"><br>
+                            <div style="width: 100px; height: 100px;border: 2px solid #808080;">
+                                <img src="Image/character/skill/ceylon_skill2.png" alt="" width="100%">
+                                </div>
+                                <table style="width:70%; margin-bottom: 2%;">
+                                    <tr>
+                                        <th style="text-align: center;">等級</th>
+                                        <th style="text-align: center;">描述</th>
+                                        <th style="text-align: center;">消耗</th>
+                                        <th style="text-align: center;">初始</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="skLV-td">1</td>
+                                        <td>攻擊力+40%</td>
+                                        <td>40</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="skLV-td">2</td>
+                                        <td>攻擊力+40%</td>
+                                        <td>40</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="skLV-td">3</td>
+                                        <td>攻擊力+40%</td>
+                                        <td>40</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="skLV-td">4</td>
+                                        <td>攻擊力+40%</td>
+                                        <td>40</td>
+                                        <td>20</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="skLV-td">Rank I</td>
+                                        <td>攻擊力+40%</td>
+                                        <td>40</td>
+                                        <td>20</td>
+                                    </tr>
+                                </table>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <div id="talent" class="container tab-pane fade">
+                    <table style="width:100%; margin:2% 0%;">
+                        <tr>
+                            <th style="text-align: center;">天賦一</th>
+                            <th style="text-align: center;">解鎖條件</th>
+                            <th style="text-align: center;">描述</th>
+                        </tr>
+                        <tr>
+                            <td>白惡魔的庇護</td>
+                            <td>初始攜帶</td>
+                            <td>攻击范围内的友方单位法术抗性+5</td>
+                        </tr>
+                        <tr>
+                            <td>白惡魔的庇護</td>
+                            <td>精英一</td>
+                            <td>攻击范围内的友方单位法术抗性+5</td>
+                        </tr>
+                        <tr>
+                            <td>白惡魔的庇護</td>
+                            <td>精英二</td>
+                            <td>攻击范围内的友方单位法术抗性+5</td>
+                        </tr>
+                    </table>
+                    <table style="width:100%; margin:2% 0%;">
+                        <tr>
+                            <th style="text-align: center;">天賦二</th>
+                            <th style="text-align: center;">解鎖條件</th>
+                            <th style="text-align: center;">描述</th>
+                        </tr>
+                        <tr>
+                            <td>转瞬即逝的幻影</td>
+                            <td>精英二</td>
+                            <td>可以使用幻影。<br>幻影无法攻击和阻挡敌人，拥有75法术抗性，<br>30%的物理闪避，并且更容易吸引敌人的攻击，<br>同时每秒损失3%的最大生命</td>
+                        </tr>
+                    </table>
+                    <div style="margin: 10%;"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+</body>
+
+<!--bootstrap-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    var mycanvas = document.getElementById("mycanvas");
+
+    var marksData = {
+        labels: ["初始","初始MAX","精一MAX","精二MAX"],
+        datasets: [{
+            label: "生命",
+            borderColor: "rgba(251, 94, 94, 0.5)",
+            fill: false,
+            data: [796,1076,1346,1705]
+        },
+        {
+            label: "攻擊",
+            borderColor: "rgba(243, 120, 169,0.5)",
+            fill: false,
+            data: [123,456,789,1234]
+        },
+        {
+            label: "防禦",
+            borderColor: "rgba(77, 186, 239,0.5)",
+            fill: false,
+            data: [10,20,30,40]
+        },
+        {
+            label: "法抗",
+            borderColor: "rgba(128, 107, 187,0.5)",
+            fill: false,
+            data: [100,200,300,400]
+        }
+        ]
+    };
+    var myLineChart = new Chart(mycanvas, {
+    type: 'line',
+    data: marksData,
+});
+
+
+</script>
+</html>

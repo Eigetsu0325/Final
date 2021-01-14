@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Operator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/Operator.css">
+    
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="JS/Operator.js"></script>
+</head>
+
+
+<body>
+
+    <div class="container-fluid  pl-5 pt-2 pb-5 " >
+        <a href="./Home"><div class="pt-4 pb-4"><img  src="Image/backbutton.png" alt="backbutton.png" width="150px"></a>
+        <div id="panel">Hello world!</div></div>
+        <div class="p-3"></div>
+            <div class="row">
+                <div class="col-md p-2"><a href="./Operator?type=Vanguard"><img class="a" src="Image/Oclass/Vanguard.png" alt="Vanguard.png"></a></div>
+                <div class="col-md p-2"><a href="./Operator?type=Guard"><img class="a" src="Image/Oclass/Guard.png" alt="Guard.png"></a></div>
+                <div class="col-md p-2"><a href="./Operator?type=Caster"><img class="a" src="Image/Oclass/Caster.png" alt="Caster.png"  ></a></div>
+                <div class="col-md p-2"><a href="./Operator?type=Medic"><img class="a" src="Image/Oclass/Medic.png" alt="Medic.png" ></a></div>
+                <div class="col-md p-2"><a href="./Operator?type=Supporter"><img class="a" src="Image/Oclass/Supporter.png" alt="Supporter.png"></a></div>
+                <div class="col-md p-2"><a href="./Operator?type=Defender"><img class="a" src="Image/Oclass/Defender.png" alt="Defender.png"></a></div>
+                <div class="col-md p-2"><a href="./Operator?type=Sniper"><img class="a" src="Image/Oclass/Sniper.png" alt="Sniper.png"></a></div>
+                <div class="col-md p-2"><a href="./Operator?type=Specialist"><img class="a" src="Image/Oclass/Specialist.png" alt="Specialist.png"></a></div>
+            </div>
+           <!---<img src="Image/Oclass/Guard.png" alt="Guard.png">-->
+        <div class="mt-5 pt-0 bor"> 
+
+            <% for(var i=0; i<charData.length;i++) { %>
+            <div class="charbg result-item r<%=charData[i].star%> >">
+
+                <div class="pic">
+                    <img src="Image/character/smallcharacter/promotion/<%=charData[i].ImageName%>" alt="<%=charData[i].ImageName%>">
+                    <%  if(charData[i].promotion2==="TRUE"){%>
+                    <img src="Image/character/smallcharacter/promotion2/<%=charData[i].ImageName%>" alt="<%=charData[i].ImageName%>" style="display: none;">
+                    <%}%>
+                  <%  if(charData[i].skin1==="TRUE"){%>
+                    <img src="Image/character/smallcharacter/skin/<%=charData[i].ImageName%>" alt="<%=charData[i].ImageName%>" style="display: none;">
+                <%}%>
+                <%  if(charData[i].skin2==="TRUE"){%>
+                    <img src="Image/character/smallcharacter/skin2/<%=charData[i].ImageName%>" alt="<%=charData[i].ImageName%>" style="display: none;">
+                <%}%>
+                </div>
+                <div class="char-header">
+                    <div class="pro">
+                        <img src="Image/<%=charData[i].OClass%>.png" alt="<%=charData[i].OClass%>.png" width="100%">
+                    </div>
+                    <span class="rarity">
+                        <img src="Image/character/smallcharacter/<%=charData[i].star%> ostar.png" width="190%">
+                    </span>
+                </div>
+                <div class="charmask"></div>
+                <div class="charblackmask">
+                    <%
+                        let charName=charData[i].ImageName.toString().split(".")[0];
+                    %>
+
+                    <a href="./<%=charName%>"><span class="name"><%=charData[i].Name%></span></a>
+                </div>
+            </div>
+            <% } %>
+
+        </div>
+
+</body>
+
+</html>

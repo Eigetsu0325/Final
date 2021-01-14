@@ -1,0 +1,245 @@
+body {
+    background: url(../Image/Operatorbk.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+
+
+
+.bor
+{
+    border: 2px solid black;
+}
+
+#panel {
+    padding: 5px;
+    text-align: center;
+    background-color: #000000a6;
+    border: solid 1px #c3c3c3;
+  }
+  
+  #panel {
+    padding: 50px;
+    display: none;
+  }
+
+.a{
+    width: 200px;
+}
+
+.charbg .pic{
+    position: absolute;
+    width: 90px;
+    height: 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.charbg .pic img {
+    position: absolute;
+    width: 100%;
+    pointer-events: none;
+}
+
+
+.charbg .char-header{
+    margin: 2px 0 0 2px;
+    position: relative;
+    height: 20px;
+}
+
+.charbg .char-header .pro{
+    color: #fff;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(45deg,#1f1e1e,#232323);
+    position: absolute;
+    z-index: 1;
+}
+
+
+.charbg .char-header .rarity{
+    display: inline-block;
+    font-size: 24px;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    white-space: nowrap;
+    position: absolute;
+    left: 20px;
+    color: #f5e023;
+}
+
+.rarity{
+    display: inline-block;
+    letter-spacing: -.25em;
+}
+
+.charbg .char-header:after {
+    content: "";
+    position: absolute;
+    height: 33px;
+    width: 100%;
+    margin: -2px;
+    background-image: linear-gradient(160deg,#181818,#2c2c2c 24%,transparent 26%);
+    z-index: 0;
+}
+
+.charbg{
+    display: inline-block;
+    position: relative;
+    width: 90px;
+    height: 206px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.result-item {
+    margin: 6px 13px;
+    -webkit-transition: .8s;
+    transition: .8s;
+}
+
+.charbg.r5:before, .charbg.r6:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-size: 60px 60px;
+    opacity: .4;
+    -webkit-mask-image: linear-gradient(160deg,transparent 34%,#000 35%,#000 80%,transparent 90%);
+    mask-image: linear-gradient(160deg,transparent 34%,#000 35%,#000 80%,transparent 90%);
+}
+
+.charbg.r1:before, .charbg.r2:before, .charbg.r3:before, .charbg.r4:before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-size: 60px 60px;
+    opacity: .4;
+    -webkit-mask-image: linear-gradient(160deg,transparent 34%,#000 35%,#000 80%,transparent 90%);
+    mask-image: linear-gradient(160deg,transparent 34%,#000 35%,#000 80%,transparent 90%);
+}
+
+.charbg.r6:before {
+    background-color: #795b3a;
+    background-image: linear-gradient(45deg,#301d0a 25%,transparent 0,transparent 75%,#301d0a 0,#301d0a),linear-gradient(-45deg,#301d0a 25%,transparent 0,transparent 75%,#301d0a 0,#301d0a);
+}
+
+.charbg.r5:before {
+    background-color: #d4c47c;
+    background-image: linear-gradient(45deg,#a09277 25%,transparent 0,transparent 75%,#a09277 0,#a09277),linear-gradient(-45deg,#a09277 25%,transparent 0,transparent 75%,#a09277 0,#a09277);
+}
+
+.charbg.r4:before {
+    background-color: #aac1f1;
+    background-image: linear-gradient(45deg,#97a8af 25%,transparent 0,transparent 75%,#97a8af 0,#97a8af),linear-gradient(-45deg,#97a8af 25%,transparent 0,transparent 75%,#97a8af 0,#97a8af);
+}
+
+.charbg.r1:before ,.charbg.r2:before ,.charbg.r3:before {
+    background-color: #87888a;
+    background-image: linear-gradient(45deg,#cecece 25%,transparent 0,transparent 75%,#cecece 0,#cecece),linear-gradient(-45deg,#cecece 25%,transparent 0,transparent 75%,#cecece 0,#cecece);
+}
+
+
+.charbg.r6 .charmask{
+    background-image: linear-gradient(25deg,transparent,transparent 14%,#232323 15%,#232323 30%,#2e2e2e 30.1%,#64433a 38%,#814b3b 40%,rgba(255,209,109,.71) 41%,transparent 60%);
+}
+.charbg.r5 .charmask{
+    background-image: linear-gradient(25deg,transparent,transparent 14%,#232323 15%,#232323 30%,#565623 40%,#fef7de 41%,#e7d07a 47%,transparent 60%);
+}
+
+.charbg.r4 .charmask{
+    background-image: linear-gradient(25deg,transparent,transparent 14%,#232323 15%,#232323 30%,#756d7e 40%,#e0ddeb 41%,rgba(238,212,238,.77) 47%,transparent 60%);
+}
+
+.charbg.r3 .charmask{
+    background-image: linear-gradient(25deg,transparent,transparent 14%,#232323 15%,#232323 30%,#233d56 40%,#489dec 41%,rgba(72,157,236,.77) 47%,transparent 60%);
+}
+
+.charbg.r2 .charmask{
+    background-image: linear-gradient(25deg,transparent,transparent 14%,#232323 15%,#232323 30%,#405623 40%,#dce537 41%,rgba(196,231,99,.77) 47%,transparent 60%);
+}
+
+.charbg.r1 .charmask{
+    background-image: linear-gradient(25deg,transparent,transparent 14%,#232323 15%,#232323 30%,#585858 40%,#fff 41%,hsla(0,0%,100%,.77) 47%,transparent 60%);
+}
+
+.charbg .charmask{
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    position: absolute;
+    bottom: 0;
+    height: 134px;
+    width: 100%;
+}
+
+.charbg.r6 .charmask:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(#fff 30%,transparent 0),radial-gradient(#fff 30%,transparent 0),linear-gradient(130deg,#d66400,#f0e659);
+    background-blend-mode: lighten;
+    -webkit-mask-image: linear-gradient(25deg,transparent 37%,#000 41%,transparent 52%);
+    mask-image: linear-gradient(25deg,transparent 37%,#000 41%,transparent 52%);
+    background-position: 31px 0,2.5px 2.5px,0 0;
+    background-size: 5px 5px,5px 5px,auto auto;
+}
+
+.charbg .charmask:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    margin: 0.2em;
+}
+
+
+
+.charbg .charblackmask{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 68px;
+    background: linear-gradient(25deg,#565656,#565656 21%,#232323 22%,#232323 30%,transparent 60%);
+}
+
+.charbg .charblackmask .name{
+    position: absolute;
+    right: 4px;
+    color: #fff;
+    font-family: systHeavy;
+    text-shadow: 1px 1px 3px rgba(0,0,0,.8);
+}
+
+.charbg .charblackmask .name{
+    bottom: 4px;
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+}
+

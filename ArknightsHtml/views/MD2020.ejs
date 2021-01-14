@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>MD2020</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/MD2020.css">
+
+
+
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="JS/MD2020.js"></script>
+
+
+</head>
+
+<body>
+  <br>
+  <div class="container">
+    <h2>明日方舟 阿米驢救命</h2>
+    <br>
+    <!-- Nav pills -->
+    <ul class="nav nav-pills" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="pill" href="#insert">新增</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#search">查詢</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#update">修改</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="pill" href="#delete">刪除</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="insert" class="container tab-pane active"><br>
+        <form action="/insert" method="post" enctype="multipart/form-data">
+          
+          <div class="row">
+            <p style="margin:2.5px 0px 2.5px 10px">角色名：</p><input type="text" name="charName" size="8%">
+            <p style="margin:2.5px 0px 2.5px 10px">角色英文名：</p><input type="text" name="charEName" size="8%">
+            <p style="margin:2.5px 0px 2.5px 10px">戰位：</p>
+            <select name="position">
+              <option value="近戰位">近戰位</option>
+              <option value="遠程位">遠程位</option>
+            </select>
+            <p style="margin:2.5px 0px 2.5px 10px">職業：</p>
+            <select name="OClass">
+              <option value="Vanguard">先鋒</option>
+              <option value="Guard">近衛</option>
+              <option value="Defender">重裝</option>
+              <option value="Sniper">狙擊</option>
+              <option value="Caster">術師</option>
+              <option value="Medic">醫療</option>
+              <option value="Supporter">輔助</option>
+              <option value="Specialist">特種</option>
+            </select>
+            <p style="margin:2.5px 0px 2.5px 10px">稀有度：</p>
+            <select name="star">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+            </select>
+            <p style="margin:2.5px 0px 2.5px 10px">標籤(空白隔開)：</p><input type="text" name="tag">
+          </div>
+          <br>
+          <div class="row">
+            <p style="margin:2.5px 30px 2.5px 10px;">特性：</p><input type="text" name="function" size="127.5%">
+          </div><br>
+          <div class="row">
+            <p style="margin:2.5px 0px 2.5px 10px;">語音記錄：</p><input type="text" name="Text" size="127.5%">
+          </div>
+          <hr>
+          幹員訊息<br>
+          <div class="row">
+            <p style="margin:2.5px 0px 2.5px 10px;">阻擋數：</p><input type="text" name="block" size="5%">
+            <p style="margin:2.5px 0px 2.5px 10px;">初始費用：</p><input type="text" name="cost" size="5%">
+            <p style="margin:2.5px 0px 2.5px 10px;">攻擊速度：</p><input type="text" name="atk_time" size="5%">
+            <p style="margin:2.5px 0px 2.5px 10px;">再部屬時間：</p><input type="text" name="set_time" size="5%">
+          </div><br>
+          <b>初始</b>
+          <div class="row">
+            <p style="margin:2.5px 0px 2.5px 10px;">生命：</p><input type="text" name="hp" size="5%">
+            <p style="margin:2.5px 0px 2.5px 10px;">攻擊：</p><input type="text" name="atk" size="5%">
+            <p style="margin:2.5px 0px 2.5px 10px;">防禦：</p><input type="text" name="def" size="5%">
+            <p style="margin:2.5px 0px 2.5px 10px;">法抗：</p><input type="text" name="mdef" size="5%">
+          </div><br>
+          
+          <b>初始MAX</b>
+          <div class="row">
+            <p style="margin:2.5px 0px 2.5px 10px;">生命：</p><input type="text" name="hp" size="5%">
+            <p style="margin:2.5px 0px 2.5px 10px;">攻擊：</p><input type="text" name="atk" size="5%">
+            <p style="margin:2.5px 0px 2.5px 10px;">防禦：</p><input type="text" name="def" size="5%">
+            <p style="margin:2.5px 0px 2.5px 10px;">法抗：</p><input type="text" name="mdef" size="5%">
+          </div><br>
+          <b>精一MAX</b>
+          <div class="row">
+            <p style="margin:2.5px 0px 2.5px 10px;">生命：</p><input type="text" name="hp" size="5%">
+            <p style="margin:2.5px 0px 2.5px 10px;">攻擊：</p><input type="text" name="atk" size="5%">
+            <p style="margin:2.5px 0px 2.5px 10px;">防禦：</p><input type="text" name="def" size="5%">
+            <p style="margin:2.5px 0px 2.5px 10px;">法抗：</p><input type="text" name="mdef" size="5%">
+          </div><br>
+          <b>精二MAX</b>
+          <div class="row">
+            <p style="margin:2.5px 0px 2.5px 10px;">生命：</p><input type="text" name="hp" size="5%">
+            <p style="margin:2.5px 0px 2.5px 10px;">攻擊：</p><input type="text" name="atk" size="5%">
+            <p style="margin:2.5px 0px 2.5px 10px;">防禦：</p><input type="text" name="def" size="5%">
+            <p style="margin:2.5px 0px 2.5px 10px;">法抗：</p><input type="text" name="mdef" size="5%">
+          </div><br>
+          攻擊範圍 (這地方要改style='vertical-align:top;width:90px;height:60px;width:important;height:important')<br>
+          <div class="row pb-2">
+            <p style="margin:2.5px 0px 2.5px 10px;">初始：</p><input type="text" name="atkposition0" size="100%">
+          </div>
+          <div class="row pb-2">
+            <p style="margin:2.5px 0px 2.5px 10px;">精一：</p><input type="text" name="atkposition1" size="100%">
+          </div>
+          <div class="row pb-2">
+            <p style="margin:2.5px 0px 2.5px 10px;">精二：</p><input type="text" name="atkposition2" size="100%">
+          </div>
+          <hr>
+
+          <div>
+            天賦一 (有需換行請在換行的地方打上&lt;br&gt;)
+            <%for(let i=0;i<3;i++){%>
+              <div class="row pb-2">
+                <p style="margin:2.5px 0px 2.5px 10px;">天賦名稱：</p><input type="text" name="talentName1">
+                <p style="margin:2.5px 0px 2.5px 10px;">解鎖條件：</p><input type="text" name="talentRequest1">
+              </div>
+              <div class="row">
+                <p style="margin:2.5px 0px 2.5px 10px;">天賦描述：</p><input type="text" name="talentText1" size="100%">
+              </div><br>
+              <%}%>
+          </div>
+
+          <div>
+            天賦二 (有需換行請在換行的地方打上&lt;br&gt;)
+            <%for(let i=0;i<3;i++){%>
+            <div class="row pb-2">
+              <p style="margin:2.5px 0px 2.5px 10px;">天賦名稱：</p><input type="text" name="talentName2">
+              <p style="margin:2.5px 0px 2.5px 10px;">解鎖條件：</p><input type="text" name="talentRequest2">
+            </div>
+            <div class="row">
+              <p style="margin:2.5px 0px 2.5px 10px;">天賦描述：</p><input type="text" name="talentText2" size="100%">
+            </div><br>
+            <%}%>
+          </div>
+          <hr>
+
+          <div>
+            技能1 (有需換行請在換行的地方打上&lt;br&gt;)<br>
+            <div class="row">
+              <p style="margin:2.5px 0px 2.5px 10px;">技能名稱：</p><input type="text" name="skillName1">
+            </div>
+            <%for(let i=0;i<skillLV.length;i++){%>
+              <%=skillLV[i]%>
+              <div class="row pb-2">
+                <p style="margin:2.5px 0px 2.5px 10px;">消耗：</p><input type="text" name="skillStart1"size="5%">
+                <p style="margin:2.5px 0px 2.5px 10px;">初始：</p><input type="text" name="skillCost1" size="5%">
+                <p style="margin:2.5px 0px 2.5px 10px;">描述：</p><input type="text" name="skillText1" size="90%">
+              </div>
+    
+              <%}%>
+              
+          </div>
+          <hr>
+
+          <div>
+            技能2 (有需換行請在換行的地方打上&lt;br&gt;)<br>
+            <div class="row">
+              <p style="margin:2.5px 0px 2.5px 10px;">技能名稱：</p><input type="text" name="skillName2">
+            </div>
+            <%for(let i=0;i<skillLV.length;i++){%>
+              <%=skillLV[i]%>
+              <div class="row pb-2">
+                <p style="margin:2.5px 0px 2.5px 10px;">消耗：</p><input type="text" name="skillStart2"size="5%">
+                <p style="margin:2.5px 0px 2.5px 10px;">初始：</p><input type="text" name="skillCost2" size="5%">
+                <p style="margin:2.5px 0px 2.5px 10px;">描述：</p><input type="text" name="skillText2" size="90%">
+              </div>
+    
+              <%}%>
+          </div>
+          <hr>
+
+          <div>
+            技能3 (有需換行請在換行的地方打上&lt;br&gt;)<br>
+            <div class="row">
+              <p style="margin:2.5px 0px 2.5px 10px;">技能名稱：</p><input type="text" name="skillName3">
+            </div>
+            <%for(let i=0;i<skillLV.length;i++){%>
+              <%=skillLV[i]%>
+              <div class="row pb-2">
+                <p style="margin:2.5px 0px 2.5px 10px;">消耗：</p><input type="text" name="skillStart3"size="5%">
+                <p style="margin:2.5px 0px 2.5px 10px;">初始：</p><input type="text" name="skillCost3" size="5%">
+                <p style="margin:2.5px 0px 2.5px 10px;">描述：</p><input type="text" name="skillText3" size="90%">
+              </div>
+    
+              <%}%>
+          </div>
+          <hr>
+
+          <div class="row pb-2">
+                <p style="margin:2.5px 0px 2.5px 10px">精一：</p>
+                <select name="promotion">
+                  <option value="TRUE">有</option>
+                  <option value="FALSE">沒有</option>
+                </select>
+                <p style="margin:2.5px 0px 2.5px 10px">精二：</p>
+                <select name="promotion2">
+                  <option value="TRUE">有</option>
+                  <option value="FALSE">沒有</option>
+                </select>
+                <p style="margin:2.5px 0px 2.5px 10px">時裝1：</p>
+                <select name="skin">
+                  <option value="TRUE">有</option>
+                  <option value="FALSE">沒有</option>
+                </select>
+                <p style="margin:2.5px 0px 2.5px 10px">時裝2：</p>
+                <select name="skin2">
+                  <option value="TRUE">有</option>
+                  <option value="FALSE">沒有</option>
+                </select>
+          </div>
+
+          <%for(let i=0;i<uploadImgName.length;i++){%>
+          <div class="progressbarTWInput">
+            <p style="margin:2.5px 0px 2.5px 10px;"><%=uploadImgName[i]%></p><input type="file" name="pic">
+            <img class="preview_progressbarTW_img" src="#" width="100px">
+          </div>
+          <%}%>
+
+          <br>
+          <input type="submit">
+          
+        </form>
+
+
+
+
+      </div>
+
+
+
+      <div id="search" class="container tab-pane fade"><br>
+        
+      </div>
+
+      <div id="update" class="container tab-pane fade"><br>
+        
+      </div>
+
+      <div id="delete" class="container tab-pane fade"><br>
+        
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

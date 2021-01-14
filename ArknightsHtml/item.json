@@ -1,0 +1,339 @@
+{
+    "upgradematerials": [
+        {
+            "name": "酮陣列",
+            "imgname": "KetonColloid.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "糖聚塊",
+            "imgname": "SugarLump.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "糖組",
+            "imgname": "SugarPack.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "聚合劑",
+            "imgname": "Polymerization Preparation.png",
+            "bgColor": "yellow"
+        },
+        {
+            "name": "聚酸酯組",
+            "imgname": "PolyesterPack.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "聚酸酯塊",
+            "imgname": "PolyesterLump.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "D32鋼",
+            "imgname": "D32Steel.png",
+            "bgColor": "yellow"
+        },
+        {
+            "name": "破損裝置",
+            "imgname": "DamagedDevice.png",
+            "bgColor": "black"
+        },
+        {
+            "name": "源岩",
+            "imgname": "Orirock.png",
+            "bgColor": "black"
+        },
+        {
+            "name": "輕錳礦",
+            "imgname": "ManganeseOre.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "雙酮",
+            "imgname": "Diketon.png",
+            "bgColor": "black"
+        },
+        {
+            "name": "研磨石",
+            "imgname": "Grindstone.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "異鐵組",
+            "imgname": "OrironCluster.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "固源岩組",
+            "imgname": "OrirockCluster.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "RMA70-12",
+            "imgname": "RMA70-12.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "提純源岩",
+            "imgname": "OrirockConcentration.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "技巧概要-卷1",
+            "imgname": "SkillSummaries1.png",
+            "bgColor": "green"
+        },
+        {
+            "name": "雙極納米片",
+            "imgname": "BipolarNanoflake.png",
+            "bgColor": "yellow"
+        },
+        {
+            "name": "裝置",
+            "imgname": "Device.png",
+            "bgColor": "green"
+        },
+        {
+            "name": "全新裝置",
+            "imgname": "IntegratedDevice.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "技巧概要-卷2",
+            "imgname": "SkillSummaries2.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "五水研磨石",
+            "imgname": "GrindstonePentahydrate.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "代糖",
+            "imgname": "SugarSubstitute.png",
+            "bgColor": "black"
+        },
+        {
+            "name": "三水錳礦",
+            "imgname": "ManganeseTrihydrate.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "技巧概要-卷3",
+            "imgname": "SkillSummaries3.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "扭轉醇",
+            "imgname": "LoxicKohl.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "酮凝集",
+            "imgname": "Polyketon.png",
+            "bgColor": "green"
+        },
+        {
+            "name": "白馬醇",
+            "imgname": "WhiteHorseKohl.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "聚酸酯",
+            "imgname": "Polyester.png",
+            "bgColor": "green"
+        },
+        {
+            "name": "酮凝集組",
+            "imgname": "Aketon.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "異鐵塊",
+            "imgname": "OrironBlock.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "RMA70-24",
+            "imgname": "RMA70-24.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "異鐵碎片",
+            "imgname": "OrironShard.png",
+            "bgColor": "black"
+        },
+        {
+            "name": "改量裝置",
+            "imgname": "OptimizedDevice.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "糖",
+            "imgname": "Sugar.png",
+            "bgColor": "green"
+        },
+        {
+            "name": "異鐵組",
+            "imgname": "Oriron.png",
+            "bgColor": "green"
+        },
+        {
+            "name": "固源岩",
+            "imgname": "OrirockCube.png",
+            "bgColor": "green"
+        },
+        {
+            "name": "酯原料",
+            "imgname": "Ester.png",
+            "bgColor": "black"
+        }
+    ],
+    "chip": [
+        {
+            "name": "近衛晶片",
+            "imgname": "GuardChip.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "醫療晶片組",
+            "imgname": "MedicChipPack.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "特種晶片",
+            "imgname": "SpecialistChip.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "輔助晶片組",
+            "imgname": "SupporterChipPack.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "輔助晶片",
+            "imgname": "SupporterChip.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "先鋒晶片組",
+            "imgname": "VanguardChipPack.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "狙擊晶片組",
+            "imgname": "SniperChipPack.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "術師晶片組",
+            "imgname": "CasterChipPack.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "狙擊晶片",
+            "imgname": "SniperChip.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "重裝晶片",
+            "imgname": "DefenderChip.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "特種晶片組",
+            "imgname": "SpecialistChipPack.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "重裝晶片組",
+            "imgname": "DefenderChipPack.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "先鋒晶片",
+            "imgname": "VanguardChip.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "近衛晶片組",
+            "imgname": "GuardChipPack.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "術師晶片",
+            "imgname": "CasterChip.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "醫療晶片",
+            "imgname": "MedicChip.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "術師雙晶片",
+            "imgname": "CasterDualchip.png",
+            "bgColor": "yellow"
+        },
+        {
+            "name": "重裝雙晶片",
+            "imgname": "DefenderDualchip.png",
+            "bgColor": "yellow"
+        },
+        {
+            "name": "近衛雙晶片",
+            "imgname": "GuardDualchip.png",
+            "bgColor": "yellow"
+        },
+        {
+            "name": "醫療雙晶片",
+            "imgname": "MedicDualchip.png",
+            "bgColor": "yellow"
+        },
+        {
+            "name": "狙擊雙晶片",
+            "imgname": "SniperDualchip.png",
+            "bgColor": "yellow"
+        },
+        {
+            "name": "特種雙晶片",
+            "imgname": "SpecialistDualchip.png",
+            "bgColor": "yellow"
+        },
+        {
+            "name": "輔助雙晶片",
+            "imgname": "SupporterDualchip.png",
+            "bgColor": "yellow"
+        },
+        {
+            "name": "先鋒雙晶片",
+            "imgname": "VanguardDualchip.png",
+            "bgColor": "yellow"
+        }
+    ],
+    "BattleRecords":
+    [
+        {
+            "name": "高級作戰紀錄",
+            "imgname": "GoldBattleRecord.png",
+            "bgColor": "yellow"
+        },
+        {
+            "name": "中級作戰紀錄",
+            "imgname": "YellowBattleRecord.png",
+            "bgColor": "purple"
+        },
+        {
+            "name": "初級作戰紀錄",
+            "imgname": "BlueBattleRecord.png",
+            "bgColor": "blue"
+        },
+        {
+            "name": "基礎作戰紀錄",
+            "imgname": "GreenBattleRecord.png",
+            "bgColor": "green"
+        }
+    ]
+}

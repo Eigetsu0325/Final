@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chart Demo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <script src="js/Chart.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <canvas width="600" height="400" id="mycanvas"></canvas>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    var mycanvas = document.getElementById("mycanvas");
+
+    var marksData = {
+        labels: ["English", "Maths", "Physics", "Chemistry", "Biology", "History"],
+        datasets: [{
+            label: "Student A",
+            backgroundColor: "rgba(200,0,0,0.2)",
+            data: [65, 75, 70, 80, 60, 80]
+        }, {
+            label: "Student B",
+            backgroundColor: "rgba(0,0,200,0.2)",
+            data: [54, 65, 60, 70, 70, 75]
+        },{
+            label: "Student C",
+            backgroundColor: "rgba(0,200,200,0.2)",
+            data: [100, 80, 90, 60, 77, 79]
+        }]
+    };
+
+    var radarChart = new Chart(mycanvas, {
+        type: 'radar',
+        data: marksData,
+        
+    });
+
+</script>
+
+</html>
