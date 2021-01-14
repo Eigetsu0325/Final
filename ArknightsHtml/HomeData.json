@@ -684,5 +684,47 @@
     "star": "6",
     "Audio": "Nightingale.wav",
     "Text": "這隻藍色的小鳥，時常飛來和我聊天......有時候，我會夢見自己變成這孩子的模樣，在天空和大地上自由自在地飛翔......。"
+  },
+  {
+    "ID": 50,
+    "Name": "送葬人",
+    "ImageName": "Executor.png",
+    "OClass": "Sniper",
+    "promotion": "TRUE",
+    "promotion2": "TRUE",
+    "skin1": "TRUE",
+    "skin2": "FALSE",
+    "gif": "Executor.gif",
+    "star": "5",
+    "Audio": "Executor.wav",
+    "Text": "控制系統拒絕訪問？請允許我檢查一下。嗯，是命令錯位導致的前端崩潰，和框架沒關係，很好解決。<br>之後有類似的問題都可以找我，比起人類，我對機器的理解更深。"
+  },
+{
+    "ID": 51,
+    "Name": "天火",
+    "ImageName": "Skyfire.png",
+    "OClass": "Caster",
+    "promotion": "TRUE",
+    "promotion2": "TRUE",
+    "skin1": "TRUE",
+    "skin2": "FALSE",
+    "gif": "Skyfire.gif",
+    "star": "5",
+    "Audio": "Skyfire.wav",
+    "Text": "沒有無法學會的語言，沒有無法理解的法術，這是理所應當的吧？......嗯？只有我是特別的？"
+  },
+{
+    "ID": 52,
+    "Name": "伊桑",
+    "ImageName": "Ethan.png",
+    "OClass": "Specialist",
+    "promotion": "TRUE",
+    "promotion2": "TRUE",
+    "skin1": "TRUE",
+    "skin2": "FALSE",
+    "gif": "Ethan.gif",
+    "star": "4",
+    "Audio": "Ethan.wav",
+    "Text": "你問我在哪兒？就在你面前！叫我伊桑吧。你問我剛才發生了啥？哈哈，現在還不能說哦！"
   }
 ]
